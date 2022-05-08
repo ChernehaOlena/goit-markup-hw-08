@@ -180,7 +180,6 @@ img{
     border-radius: 2px;
 }
 
-
 .header-mail, .header-tel {
     font-weight: 500;
     line-height: 1.14;
@@ -304,7 +303,7 @@ img{
     opacity: 0;
 }
 
-.modal{
+.modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -463,7 +462,7 @@ img{
 }
 
 .checkbox:checked + .check-icon {
-    background-image: url(/images/icon-check.svg);
+    background-image: url(./images/icon-check.svg);
     background-color: var(--accent-color);
     border-color: transparent;
     background-repeat: no-repeat;
@@ -475,15 +474,12 @@ img{
     text-decoration: line;
     color: var(--accent-color);
 }
-
-
 .modal-check-text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--specific-text-color);
     margin-right: 4px;
 }
-
 
 .modal-send-btn {
     display: block;
@@ -500,7 +496,6 @@ img{
 
 .modal-send-btn:hover, .modal-send-btn:focus {
     background-color: #188CEB;
-
 }
 
 .modal-btn-text {
