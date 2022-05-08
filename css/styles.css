@@ -349,6 +349,8 @@ img{
 }
 
 .title-input-text {
+    display: block;
+    margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -391,8 +393,6 @@ img{
 
     color: rgba(117, 117, 117, 0.5);
 }
-
-
 
 .input-field {
     width: 100%;
@@ -443,7 +443,9 @@ img{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px; 
+}
+.modal-checkbox {
+    margin-bottom: 30px;
 }
 
 .check-icon {
@@ -834,7 +836,7 @@ margin-right: 0px;
 
 .footer-soc{
     display: block;
-    margin-right: 93px;
+    margin-right: auto;
 }
 
 .footer-subscribe {
