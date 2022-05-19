@@ -59,12 +59,14 @@ h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0;
     padding: 0;
 }
-img{
+
+img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.container{
+
+.container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -110,6 +112,7 @@ img{
 .site-nav {
     display: flex;
 }
+
 .nav-block{
     display: flex;
     margin-left: 93px;
@@ -284,7 +287,7 @@ img{
     border-radius: 4px;
 }
 
-.backdrop{
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;

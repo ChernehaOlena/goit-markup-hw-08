@@ -1,0 +1,39 @@
+
+.clients-title {
+    text-align: center;
+    color: var(--h2-title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+}
+  
+.clients-box {
+    display: flex;
+    justify-content: center;
+}
+  
+.clients-link {
+    height: 92px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid var(--border-radius);
+    border-radius: 4px;
+    fill: var(--soc-icon);
+      
+    transition: 
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {
+            border: 1px solid var(--accent-color);
+            fill: var(--accent-color);  
+        }
+}
+   
+.clients-item + .clients-item {
+      margin-left: 30px;
+}
