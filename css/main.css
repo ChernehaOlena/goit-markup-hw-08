@@ -94,27 +94,55 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .header {
+  position: relative;
   border-bottom: 1px solid var(--border-header);
+  margin: 0 auto;
 }
 
 .section-header {
   display: flex;
 }
 
-.site-nav {
-  display: flex;
-}
-
 .nav-block {
   display: flex;
   margin-left: 93px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo {
+    padding: 16px 0;
+  }
+  .nav-block {
+    display: none;
+  }
+  .contact-link-item {
+    display: none;
+  }
 }
 
 .nav-items {
@@ -192,6 +220,46 @@ img {
   fill: var(--accent-color);
 }
 
+.header__icon-menu {
+  fill: #212121;
+}
+
+.header__icon-menu:hover, .header__icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.header__icon-menu {
+  fill: #212121;
+}
+
+.header__icon-menu:hover, .header__icon-menu:focus {
+  fill: var(--accent-color);
+}
+
+.header__menu-btn .header__icon-close {
+  display: none;
+}
+
+.header__menu-btn {
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media screen and (min-width: 480px) {
+  .header__menu-btn {
+    display: none;
+  }
+}
+
 .contact-link {
   display: flex;
   margin-left: auto;
@@ -206,9 +274,9 @@ img {
 }
 
 .header-logo {
+  font-size: 24px;
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
   display: block;
@@ -217,11 +285,27 @@ img {
 }
 
 .header-logo-item {
+  font-size: 24px;
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 26px;
   line-height: 1.19;
   color: var(--logo-item-color);
+}
+
+@media screen and (max-width: 480px) {
+  .header-logo {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    font-size: 26px;
+    padding: 16px 0;
+  }
+  .header-logo-item {
+    font-size: 26px;
+  }
 }
 
 .hero {
